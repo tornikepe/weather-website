@@ -19,9 +19,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        body.current.weather_descriptions[0] +
-          " day it is today " +
-          body.location.name
+        body.current.weather_descriptions[0] + " day in " + body.location.name
       );
     }
   });
